@@ -26,6 +26,11 @@
   }
 }
 
+#audio-info {
+  color: #ccc;
+  font-size: 0.8em;
+}
+
 #app {
   margin: 0 auto;
   max-width: 1280px;
@@ -155,6 +160,7 @@ h1 {
   color: #000;
   cursor: pointer;
   font-size: 1em;
+  margin-bottom: 12px;
   padding: 0.6em 1.2em;
 }
 
@@ -193,12 +199,12 @@ h1 {
 
 .role-button .label {
   background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
   color: white;
   font-weight: bold;
   padding: 4px 0;
   position: absolute;
   text-align: center;
-  top: 0;
   width: 100%;
   z-index: 1;
 }
@@ -209,6 +215,26 @@ h1 {
   width: 100%;
 }
 
+.role-image {
+  height: 128px;
+  margin-bottom: 16px;
+  object-fit: contain;
+  width: 128px;
+}
+
 .selected-list {
   margin-top: 24px;
+}
+
+.volume-controls {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.volume-controls label {
+  color: white;
+  font-size: 0.9em;
 }
